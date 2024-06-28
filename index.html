@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colors,backgrounds and gradients</title>
+        <style>
+            #rounded1{
+                background-color: red;
+                color:white;
+                width: 200px;
+                height: 200px;
+                padding: 30px;
+                border-radius: 10px;
+            }
+            #border-img{
+                border: 10px solid transparent;
+                padding: 20px;
+                border-image: url(bg.jpeg) 30 round;
+            }
+            #my-bg{
+                background-image: url(flwr.avif) ,url(grey.avif);
+                background-position: right bottom, left top;
+                background-repeat: no-repeat, repeat;
+                padding: 15px 200px 15px 15px;
+                
+            }
+            #grad1{
+                width: 500px;
+                height: 400px;
+                background-color: blueviolet;
+                background: linear-gradient(to bottom right,cyan,pink);            
+            }
+            #grad2{
+                width: 500px;
+                height: 400px;
+                background-color: blueviolet;
+                background: linear-gradient(to right,cyan,pink);            
+            }
+            #grad3{
+                width: 500px;
+                height: 400px;
+                background-color: blueviolet;
+                background: radial-gradient(grey,cyan,pink);            
+            }
+            #grad4{
+                width: 500px;
+                height: 400px;
+                background-color: blueviolet;
+                background: repeating-radial-gradient(cyan,pink);            
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="rounded1">Rounded corner 1</div>
+        <div id="rounded2">Rounded corner 2</div>
+        <div id="rounded3">Rounded corner 3</div>
+        <br>
+        <div id="border-img">This is text with photo as border</div>
+        <div id="my-bg">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                 It has roots in a piece of classical Latin literature from 45 BC, making it over
+                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem 
+                Ipsum passage, and going through the cites of the word in classical literature, discovered
+                 the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus 
+                 Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book 
+                  a treatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                  Lorem Ipsum, "Lorem ipsum</p>
+        </div>
+        <br>
+        <div id="grad1"></div>
+        <br>
+        <div id="grad2"></div>
+        <br>
+        <div id="grad3"></div>
+        <br>
+
+        <div id="grad4"></div>
+
+
+        
+    </body>
+</html>
